@@ -1,0 +1,235 @@
+header {
+    height: 1.5rem;
+    padding-top: 5px;
+    max-width: 100%;
+}
+li a{
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 4px;
+    margin: 0px 4px;
+    line-height: 0px;
+    letter-spacing: 1px;
+}
+.home{
+    
+    width: 100%;
+    height: 100vh;
+    background-color: var(--grad);
+}
+.home::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.90;
+    width: 100%;
+    height: 104vh;
+    background: url(bg2.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.container span {
+    position: relative;
+    font-weight: 400;
+    font-size: 3.9rem;
+    letter-spacing: 3px;
+    font-family: var(--ubuntu);
+    color: transparent;
+    -webkit-text-stroke: 0.2vw rgba(0, 0, 0, 0.7);
+    text-transform: uppercase;
+    line-height: 70px;
+}
+
+.countdown {
+    display: flex;
+    background: rgba(0, 0, 0, 0.1);
+    width: 99%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--count);
+    border: 1px solid black;
+    margin-top: 5%;
+}
+.countdown .item {
+    text-align: center;
+    width: 100px;
+    color: white;
+    margin: 0px 0px;
+    font-size: 0.4rem;
+    font-weight: 500;
+    line-height: 35px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.countdown .item .var {
+    text-align: center;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    /* font-weight: 600; */
+    /* color: #171738; */
+    color: white;
+}
+.home .container h3 {
+    font-family: var(--ubuntu);
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 5%;
+}   
+.gallery{
+    width: 100%;
+}
+
+.gallery .container h2 {
+    margin: 0%;
+    margin-top: 5%;
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: var(--heading);
+    text-align: center;
+    /* font-family: var(--ubuntu); */
+    letter-spacing: 0px;
+    /* line-height: 10px; */
+}
+
+.gallery .container .box .cards {
+    background-color: var(--cardbg);
+    /* border: 2px solid black; */
+    color: black;
+    font-size: 0.65rem;
+    font-family: var(--type);
+    border-radius: 4px;
+    margin: 40px 5px;
+    padding: 20px 6px;
+    max-width: 40%;
+    height: 77px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease-in-out;
+}
+.gallery .container .box .cards:hover{
+    height: 200px;
+}
+.gallery .container .box .cards .imgBox {
+    position: relative;
+    width: 90%;
+    top: -34px;
+    left: 5px;
+    z-index: 1;
+    height: 70px;
+}
+.gallery .container .box .cards .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 4px 0px;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+.gallery .container .box .cards:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 50px;
+    transition-delay: 00.3s;
+}
+.gallery .container .box .icon img {
+    margin-right: 1px;
+    max-width: 60px;
+    opacity: 0.8;
+}
+
+.friends{
+    width: 100%;
+}
+.friends .container h2 {
+    margin: 0%;
+    margin-top: 5%;
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: var(--heading);
+    text-align: center;
+    /* font-family: var(--ubuntu); */
+    letter-spacing: 0px;
+    /* line-height: 10px; */
+}
+.friendBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin: 1% 0%;
+}
+.friendBox .friendImg {
+    width: 45%;
+    margin-top: 4%;
+}
+#anas .friendImg {
+    width: 100%;
+}
+.friendBox .friendWords {
+    width: 100%;
+}
+.friendBox .friendWords p {
+    /* padding: 10px 0px; */
+    font-size: 0.6rem;
+    font-style: italic;
+    font-weight: lighter;
+    margin-top: 5px;
+    font-family: var(--type);
+    text-align: justify;
+    
+    /* line-height: 50px; */
+}
+#nasim .friendImg {
+    width: 100%;
+}
+#muskan .friendImg{
+    width: 100%;
+}
+#rifat .friendImg{
+    width: 100%;
+}
+.friends .friendWords h2{
+    margin-top: 1%;
+    font-size: 1.2rem;
+}
+
+
+
+
+footer{
+    width: 125%;
+    font-size: 1rem;
+    padding: 4px 1px;
+}
+/* utility calsses */
+.mx{
+    margin: 0% 10%;
+}
+
+.btn{
+    background-color: transparent;
+    padding: 6px;
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family:'Ubuntu', sans-serif;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition-duration: 0.7s;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+}
